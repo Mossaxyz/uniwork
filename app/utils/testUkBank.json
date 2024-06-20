@@ -1,0 +1,34 @@
+{
+    "banks": [
+      {
+        "capabilities": ["pis"],
+        "test": true,
+        "default": true,
+        "currencies": ["GBP"],
+        "market": ["GB"],
+        "logo": "https://static.getivy.de/bank-logos/uk-lloyds.png",
+        "name": "Lloyds Sandbox (GB)",
+        "id": "gb-token-lloydssandbox"
+      },
+      {
+        "capabilities": ["pis"],
+        "test": true,
+        "default": true,
+        "currencies": ["GBP"],
+        "market": ["GB"],
+        "logo": "https://static.getivy.de/bank-logos/uk-natwest.png",
+        "name": "Natwest Sandbox (GB)",
+        "id": "gb-token-natwestsandbox"
+      },
+      {
+        "capabilities": ["pis"],
+        "test": true,
+        "default": true,
+        "currencies": ["GBP"],
+        "market": ["GB"],
+        "logo": "https://static.getivy.de/bank-logos/testbank.png",
+        "name": "Test Bank (GB)",
+        "id": "gb-testbank"
+      }
+    ]
+  }

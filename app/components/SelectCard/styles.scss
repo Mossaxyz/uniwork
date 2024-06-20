@@ -1,0 +1,185 @@
+.payment-methods {
+  height: 72px;
+  display: flex;
+  padding: 0 40px 0 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center; // Centers the content horizontally as well
+}
+
+
+ 
+ .cursor-pointer {
+  cursor: pointer;}
+
+ .grey {
+  border: #c7c7c7 0.5px solid;
+} 
+
+.select-card {
+    &:not(:last-child) {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+      }
+  
+      margin-bottom: 16px;
+    }
+
+    &__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      margin-right: 16px;
+    }
+
+
+  
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: var(--font-family-lead);
+      font-size: 22px;
+      font-weight: 700;
+      padding: 20px 0 10px 0;
+      line-height: 1.45;
+      color: #1b115c;
+      text-transform: capitalize;
+    }
+
+    
+  
+    &__subtitle {
+      text-transform: none;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43;
+      color: #1b115c;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+  
+    .input {
+      display: flex;
+  
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+  
+    
+      .stroke {
+        transform-box: fill-box;
+      }
+  
+    }
+  
+    .group {
+      flex-basis: 350px;
+    }
+  
+    .label-content {
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 420px;
+  
+      @media screen and (max-width: 768px) {
+        margin-left: 35px;
+        flex-wrap: wrap;
+        flex-direction: column;
+  
+        .paypal-credit-faq {
+          order: -1;
+          margin-top: 5px;
+          margin-bottom: 10px;
+        }
+      }
+  
+      &__title {
+        text-transform: none;
+        font-size: var(--font-size-small);
+        color: var(--color-text-lead);
+  
+        a {
+          color: #3567f6;
+        }
+      }
+  
+      .list-options {
+        flex-basis: 230px;
+  
+        @media screen and (max-width: 768px) {
+          flex-basis: unset;
+        }
+      }
+  
+      .low-deposit {
+        margin-top: 5px;
+  
+        .label-content__title {
+          margin-bottom: 5px;
+        }
+      }
+  
+      .direct-debit {
+        margin-top: 10px;
+        margin-bottom: 10px;
+  
+        &__price {
+          font-weight: bold;
+        }
+      }
+  
+      .payment-plan-title {
+        font-weight: bold;
+        line-height: var(--line-height-text-large);
+      }
+  
+      &__item {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+  
+        text-transform: none;
+        font-size: var(--font-size-small);
+        color: var(--color-text-functional-disabled);
+  
+        &:not(.checkmark) span {
+          line-height: var(--line-height-text-large);
+  
+          &:nth-child(2) {
+            font-weight: bold;
+            width: 100px;
+  
+            @media screen and (max-width: 768px) {
+              text-align: right;
+            }
+          }
+        }
+  
+        &.checkmark {
+          width: unset;
+          justify-content: flex-start;
+        }
+  
+        &.pay-in-full {
+          margin-top: 10px;
+        }
+  
+        .checkmark-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+  
+    .external-link-icon {
+      position: absolute;
+      margin-left: 5px;
+      margin-top: 1px;
+    }
+  }
+  

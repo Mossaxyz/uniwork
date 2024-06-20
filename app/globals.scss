@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../node_modules/@tui/ui-library/scss/reset.scss';
+@import '../node_modules/@tui/ui-library/scss/variables.scss';
+@import '../node_modules/@tui/ui-library/scss/mixins.scss';
+@import '../node_modules/@tui/ui-library/scss/functions.scss';
+
+
+@import '../node_modules/@tui/ui-library/scss/themes/tui-light/index.scss';
+@import '../node_modules/@tui/ui-library/scss/themes/tui-light/fonts.scss';
+@import '../node_modules/@tui/ui-library/scss/lib/typography/index';
+@import '../node_modules/@tui/ui-library/scss/lib/button/index';
+@import '../node_modules/@tui/ui-library/scss/lib/input/index';
+@import '../node_modules/@tui/ui-library/scss/lib/input/text/index';
+@import '../node_modules/@tui/ui-library/scss/lib/input/select/index';
+@import '../node_modules/@tui/ui-library/scss/lib/input/radio/index';
+@import '../node_modules/@tui/ui-library/scss/lib/input/checkbox/index';
+@import '../node_modules/@tui/ui-library/scss/lib/price/index';
+@import '../node_modules/@tui/ui-library/scss/lib/grid/index';
+@import '../node_modules/@tui/ui-library/scss/lib/card/index';
+
+
+
+.body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}

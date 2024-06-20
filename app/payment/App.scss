@@ -1,0 +1,112 @@
+.payment-opp-root {
+    font-family: var(--font-family-lead);
+    margin: 100px;
+    position: relative;
+    padding: 0 10vw 0;
+    @media screen and (max-width: 749px) {
+      margin: 10px;
+    }
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  
+  .mfe-component {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  
+  .tuipay {
+    .text-lead {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  
+    .find-bank-section {
+      
+      width: 300px;
+      position: relative;
+      padding: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+      
+      .find-bank-input {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin-top: 10px;
+      margin-bottom: 10px;
+      }
+  
+      .chevron {
+      
+        height: 19px;
+        width: 19px;
+        cursor: pointer;
+      }
+    
+    .selected-bank{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 300px;
+      padding: 0.5rem 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .bank{
+      display: flex;
+      align-items: center;
+    }
+
+  
+    .search-dropdown {
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.5rem;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+      .search-box {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+  
+        .icon-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 0.5rem;
+        }
+
+        .selected-bank{
+          display: flex;
+          align-items: center;
+          width: 300px;
+        }
+  
+        input {
+          border: 1px solid #ccc;;
+          outline: none;
+          flex: 1;
+          padding: 0.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  

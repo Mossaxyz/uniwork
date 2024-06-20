@@ -1,0 +1,139 @@
+.tuipay {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+}
+
+.available-banks {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    width: 100%;
+    margin-top: -25px;
+    margin-left: 150px;
+}
+
+
+.iframe-class{
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+}
+
+.bank-list {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bank-item {
+    align-items: center;
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+
+    .bank-logo {
+        display: flex;
+
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+.banks {
+    display: flex;
+}
+
+.text-lead {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.find-bank-section {
+    margin-top: 20px;
+    width: 600px;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.find-bank-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chevron {
+    height: 19px;
+    width: 19px;
+    cursor: pointer;
+}
+
+.selected-bank {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bank {
+    display: flex;
+    align-items: center;
+}
+
+.search-dropdown {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    .search-box {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        .icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0.5rem;
+        }
+
+        .selected-bank {
+            display: flex;
+            align-items: center;
+            width: 50px;
+        }
+
+        input {
+            border: 1px solid #ccc;
+            outline: none;
+            flex: 1;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+    }
+}
