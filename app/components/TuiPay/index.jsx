@@ -37,7 +37,7 @@ function TuiPay() {
   useEffect(() => {
     const receiveMessage = (event) => {
       const { source, type, value, redirectUrl, referenceId } = JSON.parse(
-        event.data
+        JSON.stringify(event.data)
       );
 
       if (source !== "ivy" || type !== "iframe") {

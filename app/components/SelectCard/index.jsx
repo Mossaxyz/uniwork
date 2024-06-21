@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import "./styles.scss";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ const SelectCard = ({ title, logo, subtitle, ischecked, onClick }) => {
       <div>
         {logo ? (
           <>
-            <Image src={logo } alt={title} className="select-card__logo" />
+            <Image src={logo} alt={title} className="object-fill h-18 w-22" />
           </>
         ) : (
           <div className="select-card__title">{title}</div>
@@ -20,7 +20,7 @@ const SelectCard = ({ title, logo, subtitle, ischecked, onClick }) => {
 
   return (
     <figure
-      className={`card xs payment-methods cursor-pointer clickable  level-5 ${
+      className={`card xs payment-methods cursor-pointer clickable h-48 w-48  level-5 ${
         ischecked ? "selected" : "grey"
       }`}
       role="button"
