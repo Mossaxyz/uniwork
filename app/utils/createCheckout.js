@@ -43,5 +43,4 @@ function createCheckout() {
     })
     .catch((e) => console.error("Checkout failed", e));
 }
-
 export default createCheckout;
