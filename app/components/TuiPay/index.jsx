@@ -5,7 +5,7 @@ import up from "../../../public/chevron--top.svg";
 import down from "../../../public//chevron--down.svg";
 import "./styles.scss";
 // import UkBanks from "./UkBanks.json";
-import banks from "../../utils/Banks.js";
+import banks from "../../utils/banks.js";
 import createCheckout from "../../utils/createCheckout.js";
 import Image from "next/image";
 

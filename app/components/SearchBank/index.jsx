@@ -4,7 +4,7 @@ import Image from "next/image";
 import "./styles.scss";
 // import testUkBank from "../../utils/testUkBank.json";
 // import UkBanks from "./UkBanks.json";
-import banks from "../../utils/Banks.js";
+import banks from "../../utils/banks.js";
 import search from "../../../public/search.png";
 
 function SearchBank({ selectedBank, setSelectedBank, setshowSearch }) {
