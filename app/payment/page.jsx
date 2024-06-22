@@ -9,10 +9,6 @@ import "./App.scss";
 
 export default function Page() {
   const [selectedCard, setSelectedCard] = useState("tuiPay");
-  const [search, setshowSearch] = useState(false);
-  const [selectedBank, setSelectedBank] = useState(null);
-
-  const showSearch = (value) => {};
 
   const handleClick = (cardId) => {
     setSelectedCard(cardId);

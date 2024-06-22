@@ -2,7 +2,14 @@
 import "./styles.scss";
 import Image from "next/image";
 
-const SelectCard = ({ title, logo, subtitle, ischecked, onClick }) => {
+
+const SelectCard = ({
+  title = '', // Default value for title
+  logo = undefined, // Default value for logo
+  subtitle,
+  ischecked = false, // Default value for ischecked
+  onClick
+}) => {
   const label = (
     <>
       <div>
