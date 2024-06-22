@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
+  
   return (
     <main className="flex min-h-screen mb-8 flex-col items-center p-24">
       <div className=" ">
