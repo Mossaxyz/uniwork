@@ -2,20 +2,21 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import "./styles.scss";
-import testUkBank from "../../utils/testUkBank.json";
-import UkBanks from "./UkBanks.json";
+// import testUkBank from "../../utils/testUkBank.json";
+// import UkBanks from "./UkBanks.json";
+import banks from "../../utils/Banks.js";
 import search from "../../../public/search.png";
 
 function SearchBank({ selectedBank, setSelectedBank, setshowSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredBanks, setFilteredBanks] = useState(UkBanks.banks);
+  const [filteredBanks, setFilteredBanks] = useState(banks);
   const [showBankList, setShowBankList] = useState(false);
   const [iframeView, setIframeView] = useState(false);
 
   const handleSearch = (event) => {
     const value = event.target.value.toLowerCase();
     setSearchTerm(value);
-    const filtered = UkBanks.banks.filter((bank) =>
+    const filtered = banks.filter((bank) =>
       bank.name.toLowerCase().includes(value)
     );
     setFilteredBanks(filtered);

@@ -4,7 +4,8 @@ import SearchBank from "../SearchBank/index.jsx";
 import up from "../../../public/chevron--top.svg";
 import down from "../../../public//chevron--down.svg";
 import "./styles.scss";
-import UkBanks from "./UkBanks.json";
+// import UkBanks from "./UkBanks.json";
+import banks from "../../utils/Banks.js";
 import createCheckout from "../../utils/createCheckout.js";
 import Image from "next/image";
 
@@ -70,7 +71,7 @@ function TuiPay() {
   const showSearch = (value) => {};
 
   const renderBankLogos = () => {
-    return UkBanks.banks.slice(0, 6).map((bank) => (
+    return banks.slice(0, 6).map((bank) => (
       <div key={bank.id} className="bank-item">
         <img src={bank.logo} alt={`${bank.name} logo`} className="bank-logo" />
       </div>
