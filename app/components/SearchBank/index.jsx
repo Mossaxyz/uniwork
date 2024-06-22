@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import "./styles.scss";
 import testUkBank from "../../utils/testUkBank.json";
-import UkBanks from "../../utils/UkBanks.json";
+import UkBanks from "./UkBanks.json";
 import search from "../../../public/search.png";
 
 function SearchBank({ selectedBank, setSelectedBank, setshowSearch }) {
