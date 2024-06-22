@@ -4,7 +4,7 @@ import SearchBank from "../SearchBank/index.jsx";
 import up from "../../../public/chevron--top.svg";
 import down from "../../../public//chevron--down.svg";
 import "./styles.scss";
-import UkBanks from "../../utils/UkBanks.json";
+import UkBanks from "./UkBanks.json";
 import createCheckout from "../../utils/createCheckout.js";
 import Image from "next/image";
 
