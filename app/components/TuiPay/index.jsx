@@ -37,9 +37,16 @@ function TuiPay() {
 
   useEffect(() => {
     const receiveMessage = (event) => {
-      const { source, type, value, redirectUrl, referenceId } = JSON.parse(
-        JSON.stringify(event.data)
-      );
+      let parsedData;
+
+      try {
+        parsedData = JSON.parse(event.data);
+      } catch (error) {
+        console.error("Failed to parse event data:", error);
+        return;
+      }
+
+      const { source, type, value, redirectUrl, referenceId } = parsedData;
 
       if (source !== "ivy" || type !== "iframe") {
         return;
