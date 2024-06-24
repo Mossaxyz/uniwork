@@ -65,7 +65,7 @@ export default function Page() {
             role="button"
             tabIndex="0"
           >
-            <div className="">
+            <div className="p-4 text lead bold">
               <p>Card Payment</p>
             </div>
           </figure>
