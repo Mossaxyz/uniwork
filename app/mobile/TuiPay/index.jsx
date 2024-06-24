@@ -58,11 +58,6 @@ function TuiPay() {
         // Handle success response
         console.log("User paid successfully", referenceId, redirectUrl);
 
-        const iframe = iframeRef.current;
-        if (iframe) {
-          iframe.addEventListener("load", handleIframeLoad);
-          return () => iframe.removeEventListener("load", handleIframeLoad);
-        }
         window.location.href = redirectUrl; // Redirect to success URL
       } else if (value === "error") {
         // Handle error response
