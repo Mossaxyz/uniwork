@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Page() {
-  
   return (
     <main className="flex min-h-screen mb-8 flex-col items-center p-24">
       <div className=" ">
@@ -11,12 +10,18 @@ export default function Page() {
       </div>
       <div className="flex min-h-screen mb-8 flex-col items-center p-24">
         <Link href="/payment">
-          <button type="button" className="button secondary medium">
-            start
+          <button type="button" className="button primary medium">
+            start for desktop
+          </button>
+        </Link>
+
+        <Link href="/mobile">
+          <button type="button" className="button mt-10 secondary medium">
+            start for mobile
           </button>
         </Link>
         <p className="m-0 max-w-[30ch] text-sm opacity-50 flex text-center mt-3">
-          Press button to start the demo
+          Press a button to start the demo
         </p>
       </div>
     </main>

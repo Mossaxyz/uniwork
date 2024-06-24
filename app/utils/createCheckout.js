@@ -18,7 +18,7 @@ function createCheckout() {
         },
         guest: true, // Indicates a guest checkout, user does not need to log in
         locale: "en", // Checkout window language. Options: de, nl, en, fr, es, it, pt, sv
-        successCallbackUrl: "http://tui.co.uk/",
+        successCallbackUrl: "/success",
         errorCallbackUrl: "http://localhost:8082/",
         market: "GB",
         paymentMode: "settlement",
