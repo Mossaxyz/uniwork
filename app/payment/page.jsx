@@ -15,7 +15,7 @@ export default function Page() {
     console.log("selectedCard", cardId);
   };
   return (
-    <main className="flex min-h-screen mb-8 flex-col  p-24">
+    <main className="flex min-h-screen mb-4 flex-col  p-24">
       <Image src={header} alt="header" />
 
       <div className="flex justify-start ">
