@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import SearchBank from "./SearchBank/index.jsx";
 // import up from "../../../public/chevron--top.svg";
 // import down from "../../../public//chevron--down.svg";
@@ -14,6 +14,8 @@ function TuiPay() {
   const [findBankFocus, setfindBankFocus] = useState(false);
   const [search, setshowSearch] = useState(false);
   const [redirectUrl, setRedirectUrl] = useState(null);
+  const iframeRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     if (selectedBank !== null) {
@@ -30,6 +32,12 @@ function TuiPay() {
   }, [selectedBank]);
 
   useEffect(() => {
+    const handleIframeLoad = () => {
+      if (containerRef.current) {
+        containerRef.current.scrollTop = containerRef.current.scrollHeight;
+      }
+    };
+
     const receiveMessage = (event) => {
       let parsedData;
 
@@ -49,10 +57,17 @@ function TuiPay() {
       if (value === "success") {
         // Handle success response
         console.log("User paid successfully", referenceId, redirectUrl);
+
+        const iframe = iframeRef.current;
+        if (iframe) {
+          iframe.addEventListener("load", handleIframeLoad);
+          return () => iframe.removeEventListener("load", handleIframeLoad);
+        }
         window.location.href = redirectUrl; // Redirect to success URL
       } else if (value === "error") {
         // Handle error response
         console.log("User closed Ivy Checkout");
+
         // Optionally redirect or handle error
       } else {
         // Handle unexpected response
@@ -83,7 +98,7 @@ function TuiPay() {
   // };
 
   return (
-    <>
+    <div ref={containerRef}>
       <div className="p-4 text lead normal">
         <h1>Pay instantly with your Bank</h1>
       </div>
@@ -136,12 +151,14 @@ function TuiPay() {
       {redirectUrl && (
         <div className="iframe-class justify-start">
           <iframe
+            ref={iframeRef}
+            title="Iframe Example"
             src={`${redirectUrl}&iframe=true&heigh&scroling=no&frameborder=0`}
             style={{ width: "100%", height: "600px" }}
           />
         </div>
       )}
-    </>
+    </div>
   );
 }
 

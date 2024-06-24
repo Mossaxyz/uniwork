@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <div className="h-screen bg-white">
       {/* Banner */}
-      <div className="flex bg-blue-500 w-100 h-19 justify-center items-center border border-gray-300 border-t-gray-300">
+      <div className="flex bg-blue-300 w-100 h-19 justify-center items-center border border-gray-300 border-t-gray-300">
         <Image
           src={"https://static.tui.com/assets/v2/logos/tui/tui-logo.svg"}
           alt="header"
@@ -25,6 +25,13 @@ export default function Page() {
           className="m-3"
         />
       </div>
+      <Image
+        src={"/details.png"}
+        alt="header"
+        width={382}
+        height={926}
+        className="m-3"
+      />
 
       {/* Payment Types */}
       <div className="flex">
@@ -64,7 +71,7 @@ export default function Page() {
           </figure>
         </div>
       </div>
-      {selectedCard === "tuiPay" && <TuiPay />}
+      {selectedCard === "tuiPay" && <TuiPay className="mb-10" />}
     </div>
   );
 }
