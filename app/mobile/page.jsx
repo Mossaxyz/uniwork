@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SelectCard from "../components/SelectCard/index";
 import logo from "../../public/logo.png";
-import header from "../../public/header.png";
+import head from "../../public/head.png";
 import TuiPay from "./TuiPay/index.jsx";
 
 export default function Page() {
@@ -26,10 +26,10 @@ export default function Page() {
         />
       </div>
       <Image
-        src={"/details.png"}
+        src={"/head.png"}
         alt="header"
         width={382}
-        height={926}
+        height={244}
         className="m-3"
       />
 
@@ -71,7 +71,7 @@ export default function Page() {
           </figure>
         </div>
       </div>
-      {selectedCard === "tuiPay" && <TuiPay className="mb-10" />}
+      {selectedCard === "tuiPay" && <TuiPay />}
     </div>
   );
 }
