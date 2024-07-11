@@ -7,7 +7,7 @@ function createCheckout() {
         "content-type": "application/json",
         // Never use your Ivy API key on client side. This is only for demo purposes.
         "X-Ivy-Api-Key":
-          "661fa400d932522782c55186.3439dbb4-5e02-472d-b9dd-b980e272040b",
+          "",
       },
       method: "POST",
       body: JSON.stringify({
